@@ -294,6 +294,55 @@ footer p a {
         width: 600px;
         height: 450px;
     }
+
+    /* Tablet Viewport: Style rules for table */
+    table {
+        border: 1px solid #000;
+        border-collapse: collapse;
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 1%;
+    }
+    
+    th, td {
+        border: 1px solid #000;
+        padding: 2%;
+    }
+    
+    th {
+        background-color: #000;
+        color: #fff;
+        font-size: 1.5em;
+    }
+    
+    tr:nth-child(odd) {
+        background-color: #ccc;
+    }
+    
+    /* Tablet Viewport: Style rule for form element */
+    
+    form {
+        width: auto;
+    }
+    
+    .form-grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
+    }
+    
+    .btn {
+        grid-column: 1 / span 3;
+    }
+    
+    
+    
+
 }
 
 
@@ -376,6 +425,15 @@ footer p a {
         clear: left;
         background: linear-gradient(to right, #ccc, #fff);
     }
+    #form {
+        margin-top: 2%;
+        background-color: #f2f2f2;
+        padding: inherit;
+    }
+    #form h2 {
+        text-align: center;
+    
+    }
 }
 
 /* Media Query for Large Desktop Viewports */
@@ -384,5 +442,41 @@ footer p a {
         width: 1920px;
         margin: 0 auto;
     }
+
+    table {
+        width: 80%;
+    }
 }
 
+/* Media Query for Print */
+@media print {
+    body {
+        background: #fff;
+        color: #000;
+    }
+}
+
+/* Style rules for form elements */
+fieldset, input, select, textarea {
+    margin-bottom: 2%;
+}
+
+fieldset legend {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+label {
+    display: block;
+    padding-top: 3%;
+}
+
+form #submit {
+    margin: 0;
+    border: none;
+    display: block;
+    padding: 2%;
+    background-color: #b3b3b3;
+    font-size: 1em;
+    border-radius: 10px;
+}
