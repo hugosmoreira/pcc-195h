@@ -7,7 +7,7 @@ File Name: styles.css
 /* CSS Reset */
 
 
-body, header, nav, main, footer, h1, div, img, ul, figure figcaption, article, aside {
+body, header, nav, main, footer, h1, div, img, ul, figure figcaption, article, aside, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -75,7 +75,9 @@ article:nth-last-of-type(2) {
 }
 
 
-
+video {
+    margin: 0 auto 4%;
+}
 
 
 
